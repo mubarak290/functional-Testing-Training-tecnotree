@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insurance Management App</title>
+      <link rel="stylesheet" href="C:\Users\bashamu\OneDrive - Tecnotree\Documents\Insurancehome.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add your CSS styles here */
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Insurance Management App</h1>
+		<nav>
+			<ul>
+				<li><a href="#policy-purchase">Policy Purchase</a></li>
+				<li><a href="#policy-management">Policy Management</a></li>
+				<li><a href="#security">Security</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="policy-purchase">
+			<h2>Policy Purchase</h2>
+			<form action="C:\Users\bashamu\OneDrive - Tecnotree\Documents\Insurance payment.html">
+				<label for="policy-type">Policy Type:</label>
+				<select id="policy-type" name="policy-type">
+					<option value="auto-insurance">Auto Insurance</option>
+					<option value="health-insurance">Health Insurance</option>
+					<option value="homeowners-insurance">Homeowners Insurance</option>
+				</select>
+				<br>
+				<label for="policy-amount">Policy Amount:</label>
+				<input type="text" id="policy-amount" name="policy-amount">
+				<br>
+				<label for="policy-term">Policy Term:</label>
+				<select id="policy-term" name="policy-term">
+					<option value="1-year">1 Year</option>
+					<option value="2-years">2 Years</option>
+					<option value="3-years">3 Years</option>
+				</select>
+				<br>
+				<input type="submit" value="Purchase">
+			</form>
+		</section>
+		
+		<section id="policy-management">
+			<h2>Policy Management</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Policy Type</th>
+						<th>Policy Amount</th>
+						<th>Policy Term</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Auto Insurance</td>
+						<td>$5000</td>
+						<td>2 Years</td>
+						<td><button>Edit</button><button>Delete</button></td>
+					</tr>
+					<tr>
+						<td>Health Insurance</td>
+						<td>$10000</td>
+						<td>1 Year</td>
+						<td><button>Edit</button><button>Delete</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		
+		<section id="security">
+			<h2>Security</h2>
+			<form>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username">
+				<br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password">
+				<br>
+				<input type="submit" value="Login">
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 Insurance Management App</p>
+	</footer>
+</body>
+</html>
